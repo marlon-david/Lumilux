@@ -1,0 +1,141 @@
+extend common/template.jade
+
+block title
+    title Documentos
+
+block carousel
+    article.banners
+        section#carousel-banner.owl-carousel(data-carousel="single-item")
+            -for(var i=0; i<5; i++)
+                .item
+                    figure.banner
+                        a(href="#")
+                            if i%2==0
+                                img(src="imagens/banners/banner-1.jpg", alt="", title="", class="img-responsive")
+                            else
+                                img(src="imagens/banners/banner-2.jpg", alt="", title="", class="img-responsive")
+
+    //- banners
+
+block conteudo
+    nav.menu-produtos
+        ul.nav.container
+            li.active
+                a(href="#") #[i.icone.iluminacao] ILUMINAÇÃO
+            li
+                a(href="#") #[i.icone.fios-cabos] FIOS E CABOS
+            li
+                a(href="#") #[i.icone.automacao-controle] AUTOMAÇÃO E CONTROLE
+            li
+                a(href="#") #[i.icone.instalacao-eletrica] INSTALAÇÃO ELÉTRICA
+            li
+                a(href="#") #[i.icone.comando-sinalizacao] COMANDO E SINALIZAÇÃO
+    //- fim .menu-produtos
+    section.solucoes
+        .container
+            .row
+                .col-md-4
+                    header.page-header
+                        h2 NOSSAS SOLUÇÕES
+                .col-md-4.col-md-push-4
+                    form.busca
+                        .input-group.input-group-sm
+                            input(type="text",name="busca",placeholder="O que você procura?").form-control
+                            span.input-group-btn
+                                button(type="submit").btn
+                                    i.icone.busca
+
+            //- page-header
+
+            .row
+                .col-md-3.col-sm-6
+                    .box-solucao
+                        .imagem
+                            i.icone.varejo
+                            strong VAREJO
+                        .texto
+                            p Esta solução é voltada a profissionais e consumidores que procuram agilidade e diversidade de produtos.
+                            a(href="#").saiba-mais + SAIBA MAIS
+                    //- .box-solucao
+                //- .col
+                .col-md-3.col-sm-6
+                    .box-solucao
+                        .imagem
+                            i.icone.spot
+                            strong SPOT
+                        .texto
+                            p A solução em atendimento no canal Spot é voltada a empresas de todos os seguimentos e porte.
+                            a(href="#").saiba-mais + SAIBA MAIS
+                    //- .box-solucao
+                //- .col
+                .col-md-3.col-sm-6
+                    .box-solucao
+                        .imagem
+                            i.icone.kam
+                            strong KAM
+                        .texto
+                            p Esta solução é voltada a  para clientes com algum tipo de acordo comercial ou de relacionamento com a Lumilux.
+                            a(href="#").saiba-mais + SAIBA MAIS
+                    //- .box-solucao
+                //- .col
+                .col-md-3.col-sm-6
+                    .box-solucao
+                        .imagem
+                            i.icone.servicos
+                            strong SERVIÇOS
+                        .texto
+                            p Atuamos com montagem de painéis, implantação de equipamentos para automatização de processos e projetos de iluminação.
+                            a(href="#").saiba-mais + SAIBA MAIS
+                    //- .box-solucao
+                //- .col
+            //- row
+    //- .solucoes
+
+    .container
+        .row.area-chamadas
+            .col-sm-4
+                a(href="#")
+                    figure
+                        img(src="imagens/estrutural/chamada-1.jpg",alt="Chamada 1").img-responsive
+                        figcaption
+                            | VOCÊ TEM UMA EMPRESA? CONHEÇA NOSSO B2B.
+                            span #[i.fa.fa-angle-double-right]
+            .col-sm-4
+                a(href="#")
+                    figure
+                        img(src="imagens/estrutural/chamada-2.jpg",alt="Chamada 2").img-responsive
+                        figcaption
+                            | VOCÊ TEM UMA EMPRESA? CONHEÇA NOSSO B2B.
+                            span #[i.fa.fa-angle-double-right]
+            .col-sm-4
+                a(href="#")
+                    figure
+                        img(src="imagens/estrutural/chamada-3.jpg",alt="Chamada 3").img-responsive
+                        figcaption
+                            | VOCÊ TEM UMA EMPRESA? CONHEÇA NOSSO B2B.
+                            span #[i.fa.fa-angle-double-right]
+
+
+    section.area-fornecedores
+        .container
+            header.page-header
+                h2 FORNECEDORES ESPECIAIS
+
+            //- page-header
+
+            .carousel-h.fornecedores-flex
+                section#carousel-fornecedores.owl-carousel.order-md-2(data-carousel="mult-items", data-md-qnt="7", data-sm-qnt="4", data-xs-qnt="3")
+                    -for(var i=0; i<14; i++)
+                        .item
+                            figure.cliente-default
+                                a(href="#")
+                                    img(src="imagens/conteudo/fornecedor-#{(i%7)+1}.png", alt="Fornecedor", title="", class="img-responsive")
+
+
+                .pager.order-md-1
+                    a(href="#", class="pager-prev", data-target="#carousel-fornecedores", data-event="prev"): i.icone.pager-prev
+                .pager.order-md-3
+                    a(href="#", class="pager-next", data-target="#carousel-fornecedores", data-event="next"): i.icone.pager-next
+
+    //-.area-fornecedores
+

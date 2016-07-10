@@ -1,0 +1,38 @@
+header.header-topo
+    .container
+        .header-flex
+            .navbar-header
+                figure.logo
+                    a(href="index.html")
+                        img(src="imagens/estrutural/logo.png", alt="", title="", class="img-responsive")
+
+                button.navbar-toggle.collapsed(data-toggle="collapse", data-target="#menu")
+                    i.fa.fa-bars
+
+            // MENU
+            nav.menu-header
+                block active
+                    -var currentUrl = "home"
+
+                ul#menu.collapse.unlistenner
+                    li(class={"active": currentUrl == "home"}) #[a(href="index.html") Inicial]
+                    li(class={"active": currentUrl == "inst"}) #[a(href="institucional.html") Soluções]
+                    li(class={"active": currentUrl == "serv"}) #[a(href="servicos.html") Área do Cliente]
+                    li(class={"active": currentUrl == "clie"}) #[a(href="clientes.html") Loja Virtual]
+                    li(class={"active": currentUrl == "orca"}) #[a(href="orcamento.html") Catálogo]
+                    li(class={"active": currentUrl == "orca"}) #[a(href="orcamento.html") Orçamento]
+                    li(class={"active": currentUrl == "cont"}) #[a(href="contato.html") Contato]
+
+            // REDES SOCIAIS
+            .redes-sociais
+                a(href="#").facebook #[i.fa.fa-facebook-square]
+                a(href="#").linkedin #[i.fa.fa-linkedin-square]
+
+        .header-bottom
+            // CARRINHO
+            a(href="#").box-carrinho
+                i.icone.carrinho
+                span Meu carrinho
+                strong 0 itens
+
+    block carousel

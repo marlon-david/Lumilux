@@ -1,0 +1,41 @@
+@media (min-width:1366px){
+	.container {
+		width: 1300px;
+	}
+}
+
+@media (min-width:$screen-md-min){
+	// Desktop - >= 990px
+    #menu li {
+        height: 98px;
+    }
+
+    .header-topo {
+    	.header-flex, #menu {
+    		min-height: 108px;
+    	}
+    	.header-bottom {
+        	text-align: right;
+        }
+    }
+
+	.menu-produtos ul.nav {
+		display: table;
+		width: 100%;
+
+		> li {
+			display: table-cell;
+			height: 76px;
+			text-align: center;
+			vertical-align: middle;
+
+			a {
+                line-height: 76px;
+			}
+		}
+	}
+
+	.area-newsletter .form-control {
+		min-width: 349px;
+	}
+}

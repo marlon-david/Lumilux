@@ -1,0 +1,34 @@
+.banners{
+    position: relative;
+    margin-top: 20px;
+
+    #carousel-banner{
+
+        .item{
+
+            .banner{
+            }
+        }
+    }
+
+    .owl-pagination{
+        height: 35px;
+        position: relative;
+        top: -35px;
+        margin-bottom: -35px;
+        text-align: center;
+
+        .owl-page{
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            margin: 0 3px;
+            border: 2px solid #FFF;
+
+            &.active{
+                background: #FFF;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+a{
+	color:inherit;
+}
+
+.paginacao{
+	text-align: center;
+}
+
+.title-internas{
+	margin-top:0;
+}
+
+.page-header{
+    padding-bottom: 0;
+    border: none;
+
+    h1{
+        position: relative;
+        z-index: 3;
+        font-family: "RalewayMedium";
+        font-size: 30px;
+        color: rgba(#444, 1);
+
+        &:before{
+            content: "";
+            width: 40px;
+            height: 40px;
+            background: $cor-default;
+
+            position: absolute;
+            top: calc(50% - 20px);
+            left: -15px;
+            z-index: -1;
+
+            @include transform(rotate(45deg));
+        }
+    }
+}

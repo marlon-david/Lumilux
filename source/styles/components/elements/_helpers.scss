@@ -1,0 +1,42 @@
+@for $i from 0 through 20 {
+	$m: $i * 5;
+
+	.mgb-#{$m}{
+		margin-bottom: #{$m}px;
+	}
+
+	.mgt-#{$m}{
+		margin-top: #{$m}px;
+	}
+
+}
+
+#msg-ie{
+	.alert{
+		border-radius:0;
+	}
+}
+
+.no-roundnnes{
+	border-radius:0;
+}
+
+.internas{
+	padding-bottom:140px;
+}
+
+.btn-enviar,
+.btn-voltar{
+	font-size:20px;
+	min-width:190px;
+}
+
+a[data-lightbox]{
+	cursor: zoom-in
+}
+
+.title-internas{
+	font-family: "RalewayMedium";
+	font-size: 30px;
+	color: rgba(#323232, 1);
+}

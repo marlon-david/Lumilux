@@ -1,0 +1,91 @@
+.header-topo{
+    position: relative;
+
+    .redes-sociais {
+        padding-top: 40px;
+        text-align: center;
+        white-space: nowrap;
+        width: 100px;
+
+        a {
+            color: #696969;
+            display: inline-block;
+            font-size: 25px;
+            padding-left: 10px;
+
+            &:hover {
+                color: $cor-default;
+            }
+        }
+    }
+
+    .header-bottom {
+        @include clearfix;
+        text-align: center;
+
+        .box-carrinho {
+            display: inline-block;
+            font-size: 12px;
+            line-height: 140%;
+            padding-left: 40px;
+            position: relative;
+            width: 125px;
+
+            .icone {
+                left: 0;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            span, strong {
+                display: block;
+                text-align: left;
+            }
+        }
+    }
+
+    .navbar-header{
+        float: none;
+        width: 100%;
+
+        .logo{
+            margin-top: 17px;
+            text-align: center;
+            img{display: inline-block;}
+        }
+
+        .navbar-toggle{
+            font-size: 25px;
+            color: $cor-default;
+
+            @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+                display: inline-block;
+            }
+        }
+
+        @media (max-width: $screen-sm-max){
+            margin-top: 30px;
+        }
+
+        @media (min-width: $screen-md-min){
+            width: 30%;
+        }
+    }
+}
+
+.header-flex{
+    @include flexbox();
+    @include prefixos(justify-content, space-between);
+    @include prefixos(align-items, center);
+
+    @media (max-width: $screen-xs-max){
+        @include prefixos(flex-wrap, wrap);
+        @include prefixos(flex-direction, column);
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+        @include prefixos(flex-wrap, wrap);
+        @include prefixos(flex-direction, column);
+    }
+}

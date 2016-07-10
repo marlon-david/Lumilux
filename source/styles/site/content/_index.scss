@@ -1,0 +1,209 @@
+.menu-produtos {
+    background-color: $cor-default;
+    margin-bottom: 7px;
+
+    ul.nav {
+        padding-right: 0;
+
+        li {
+            padding: 0;
+
+            a {
+                background-color: transparent;
+                color: #FFF;
+                font-family: 'latobold', sans-serif;
+                font-size: 13px;
+                line-height: 76px;
+                padding: 0 10px;
+
+                .icone {
+                    margin: 0 5px;
+                }
+            }
+
+            &.active,
+            &:hover {
+                background-color: #FFF;
+                a {
+                    background-color: transparent;
+                    color: $cor-default;
+                }
+            }
+        }
+    }
+}
+
+form.busca {
+    .input-group {
+        .form-control, .btn {
+            background-color: #e5e5e5;
+            border-color: #e5e5e5;
+            border-radius: 0;
+            box-shadow: none;
+            margin-bottom: 78px;
+            margin-top: 58px;
+        }
+    }
+}
+
+.solucoes {
+    border-top: 2px solid #277FD1;
+
+    .page-header {
+        border-bottom: 1px solid #696969;
+        margin-bottom: 81px;
+        margin-top: 58px;
+
+        h2 {
+            margin: 0;
+        }
+    }
+
+    .box-solucao {
+        @include clearfix;
+        margin-bottom: 68px;
+
+        .imagem {
+            float: left;
+            width: 80px;
+            text-align: center;
+
+            .icone {
+                margin-bottom: 8px;
+            }
+
+            strong {
+                font-family: 'latobold', sans-serif;
+                font-size: 18px;
+            }
+        }
+
+        .texto {
+            float: right;
+            padding: 0 12px;
+            width: calc(100% - 90px);
+
+            p {
+                height: 114px;
+                line-height: 140%;
+                margin-bottom: 26px;
+                overflow: hidden;
+                text-align: justify;
+            }
+
+            .saiba-mais {
+                color: $cor-default;
+                display: inline-block;
+                font-family: 'latobold', sans-serif;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+.area-chamadas {
+    figure {
+        margin-bottom: 35px;
+        position: relative;
+        max-width: 403px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &:hover img {
+            opacity: .9;
+        }
+
+        figcaption {
+            color: #FFF;
+            font-family: 'latoblack', sans-serif;
+            font-size: 18px;
+            height: 100%;
+            left: 0;
+            line-height: 120%;
+            padding: 20px;
+            position: absolute;
+            top: 0;
+            width: 100%;
+
+            @media (min-width: 480px) {
+                font-size: 25px;
+            }
+
+            span {
+                display: block;
+                padding-left: 215px;
+                position: relative;
+
+                &:before {
+                    background-color: #E5DB5D;
+                    content: '';
+                    height: 1px;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    width: 215px;
+                }
+            }
+        }
+    }
+}
+
+.area-fornecedores {
+    border-top: 2px solid #277FD1;
+    margin-bottom: 70px;
+    position: relative;
+
+    .page-header h2 {
+        color: #302F2F;
+        font-family: 'latolight_italic', sans-serif;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    @media (min-width: $screen-md-min){
+        @for $i from 1 through 10 {
+            .order-md-#{$i}{
+                @include order(#{$i});
+            }
+        }
+    }
+
+    .fornecedores-flex{
+        @include flexbox();
+        @include prefixos(justify-content, space-between);
+        @include prefixos(align-items, center);
+
+        @media (max-width: $screen-xs-min){
+            @include prefixos(justify-content, center);
+            @include prefixos(flex-wrap, wrap);
+
+            .pager{
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+        }
+
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+            @include prefixos(justify-content, center);
+            @include prefixos(flex-wrap, wrap);
+
+            .pager{
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+        }
+    }
+
+    #carousel-fornecedores{
+        margin: 20px 0;
+        padding: 5px;
+
+        @media (min-width: $screen-md-min){
+            width: 80%;
+        }
+
+        .item {
+            padding: 0 12px;
+        }
+    }
+}

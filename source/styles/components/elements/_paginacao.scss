@@ -1,0 +1,26 @@
+.paginacao{
+	margin-top:20px;
+	margin-bottom:30px;
+
+	> *{
+		display: inline-block;
+		border:1px solid rgba(#000,0.2);
+		padding:10px 15px;
+		background:#fff;
+	}
+
+	.active,
+	*:hover{
+		$color-default:#fff;
+		text-decoration:none;
+		background: $cor-default;
+		color: $color-default;
+	}
+
+	.active{
+		background: rgba($cor-default, .8);
+	}
+	*:hover{
+		background: rgba($cor-default, .4);
+	}
+}

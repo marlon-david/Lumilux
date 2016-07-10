@@ -1,0 +1,78 @@
+.rodape{
+
+	h3 {
+		font-family: 'latobold', sans-serif;
+		font-size: 20px;
+	}
+
+	.area-newsletter, .col-contato {
+		margin-bottom: 40px;
+	}
+
+	.area-newsletter {
+		.btn, .form-control {
+			border-radius: 0;
+			margin-bottom: 10px;
+		}
+
+		.form-control {
+			border: 1px solid #696969;
+			margin-right: 10px;
+		}
+
+		.btn-primary {
+			background-color: $cor-default;
+			border-color: $cor-default;
+		}
+	}
+
+	.col-contato {
+
+		@media (min-width: 1200px) {
+			padding-left: 70px;
+		}
+
+		&:before {
+			background-color: #696969;
+			content: '';
+			height: 2px;
+			left: 50%;
+			position: absolute;
+			top: -3%;
+			transform: translateX(-50%);
+			width: 77px;
+		}
+		@media (min-width: 768px) {
+			&:before {
+				height: 77px;
+				left: -3%;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 2px;
+			}
+		}
+
+		h3 {
+			font-family: 'latoblack', 'latobold', sans-serif;
+		}
+
+		p {
+			font-size: 16px;
+			margin-bottom: 5px;
+		}
+	}
+
+	.creditos {
+		background-color: $cor-default;
+		padding: 17px 0;
+
+		p {
+			color: #FFF;
+			font-family: 'latoregular', sans-serif;
+			font-size: 14px;
+			line-height: 20px;
+			margin: 0;
+			text-align: center;
+		}
+	}
+}

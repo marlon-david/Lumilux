@@ -1,0 +1,36 @@
+doctype html
+html(lang="pt-br")
+	head
+		block title
+			title Lumilux
+
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		meta(name="theme-color", content="#277fd1")
+
+		link(rel="stylesheet", type="text/css", href="styles/estilos.min.css")
+		link(rel="shortcut icon" type="image/x-icon" href="favicon.ico")
+
+		include mixins.jade
+
+	body
+		noscript
+			.alert.alert-warning.text-center
+				h1 Seu navegador está com os scripts desabilitados!
+				p Para melhor funcionamento do site, habilite-os.
+
+		.wrapper
+
+			include header.jade
+			block conteudo
+
+		// /.wrapper
+		include footer.jade
+
+		script(src="js/starter.js")
+		script(src="js/lightbox.min.js")
+		script(src="js/scripts.js")
+		//
+			[if lt IE 10]>
+				<script>message_IE();</script>
+			<![endif]

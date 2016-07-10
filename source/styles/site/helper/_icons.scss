@@ -1,0 +1,44 @@
+.icon{
+    display: inline-block;
+    background: $bg-sprite;
+}
+
+i.icone {
+	background-image: url(../imagens/estrutural/sprites.png);
+	display: inline-block;
+	vertical-align: middle;
+
+	&.carrinho {@include make-icon(32px, 26px, 0px 0px);}
+
+	&.iluminacao {@include make-icon(28px, 30px, -35px -30px);}
+	&.fios-cabos {@include make-icon(23px, 33px, -68px -33px);}
+	&.automacao-controle {@include make-icon(28px, 27px, -96px -27px);}
+	&.instalacao-eletrica {@include make-icon(37px, 19px, -127px -19px);}
+	&.comando-sinalizacao {@include make-icon(34px, 29px, -170px -29px);}
+
+	&.busca {@include make-icon(21px, 21px, 0px -35px);}
+
+	&.varejo {@include make-icon(74px, 74px, 0px -70px);}
+	&.spot {@include make-icon(74px, 74px, -74px -70px);}
+	&.kam {@include make-icon(74px, 74px, -148px -70px);}
+	&.servicos {@include make-icon(74px, 74px, -222px -70px);}
+
+	&.pager-prev {@include make-icon(25px, 19px, -210px 0px);}
+	&.pager-next {@include make-icon(25px, 19px, -235px 0px);}
+
+	&.telefone {@include make-icon(21px, 21px, -263px 0px);}
+	&.email {@include make-icon(21px, 16px, -210px -41px);}
+}
+li.active a i.icone,
+li:hover a i.icone {
+	&.iluminacao {@include make-icon(28px, 30px, -35px 0px);}
+	&.fios-cabos {@include make-icon(23px, 33px, -68px 0px);}
+	&.automacao-controle {@include make-icon(28px, 27px, -96px 0px);}
+	&.instalacao-eletrica {@include make-icon(37px, 19px, -127px 0px);}
+	&.comando-sinalizacao {@include make-icon(34px, 29px, -170px 0px);}
+}
+
+a:hover i.icone {
+	&.pager-prev {@include make-icon(25px, 19px, -210px -20px);}
+	&.pager-next {@include make-icon(25px, 19px, -235px -20px);}
+}
