@@ -1,6 +1,17 @@
 .menu-produtos {
     background-color: $cor-default;
     margin-bottom: 7px;
+    position: relative;
+
+    &:after {
+        content: '';
+        height: 2px;
+        background-color: #277FD1;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+    }
 
     ul.nav {
         padding-right: 0;
@@ -47,8 +58,6 @@ form.busca {
 }
 
 .solucoes {
-    border-top: 2px solid #277FD1;
-
     .page-header {
         border-bottom: 1px solid #696969;
         margin-bottom: 81px;

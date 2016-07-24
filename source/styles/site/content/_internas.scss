@@ -210,3 +210,28 @@
         padding: 7px 16px;
     }
 }
+
+.pagina-catalogo {
+    .area-texto {
+        margin: 30px 0;
+    }
+}
+
+.interna-fornecedores {
+
+    .box-fornecedor {
+        border-left: 1px solid #535353;
+        display: inline-block;
+        padding: 5px 15px;
+        margin-top: 20px;
+        width: 208px;
+
+        &:first-child {
+            border-left: none;
+        }
+
+        .img-responsive {
+            margin: 0 auto;
+        }
+    }
+}

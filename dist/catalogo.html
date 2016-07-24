@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
     <head>
-        <title>Login</title>
+        <title>Catálogo</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#277fd1">
@@ -22,11 +22,11 @@
                         <!-- MENU-->
                         <nav class="menu-header">
                             <ul id="menu" class="collapse unlistenner">
-                                <li class="active"><a href="index.html">Inicial</a></li>
+                                <li><a href="index.html">Inicial</a></li>
                                 <li><a href="solucoes.html">Soluções</a></li>
                                 <li><a href="servicos.html">Área do Cliente</a></li>
                                 <li><a href="clientes.html">Loja Virtual</a></li>
-                                <li><a href="catalogo.html">Catálogo</a></li>
+                                <li class="active"><a href="catalogo.html">Catálogo</a></li>
                                 <li><a href="orcamento.html">Orçamento</a></li>
                                 <li><a href="contato.html">Contato</a></li>
                             </ul>
@@ -38,23 +38,47 @@
                         <!-- CARRINHO--><a href="#" class="box-carrinho"><i class="icone carrinho"></i><span>Meu carrinho</span><strong>0 itens</strong></a></div>
                 </div>
             </header>
-            <section class="internas pagina-login">
+            <nav class="menu-produtos mgt-60">
+                <ul class="nav container">
+                    <li class="active"><a href="#"><i class="icone iluminacao"></i> ILUMINAÇÃO</a></li>
+                    <li><a href="#"><i class="icone fios-cabos"></i> FIOS E CABOS</a></li>
+                    <li><a href="#"><i class="icone automacao-controle"></i> AUTOMAÇÃO E CONTROLE</a></li>
+                    <li><a href="#"><i class="icone instalacao-eletrica"></i> INSTALAÇÃO ELÉTRICA</a></li>
+                    <li><a href="#"><i class="icone comando-sinalizacao"></i> COMANDO E SINALIZAÇÃO</a></li>
+                </ul>
+            </nav>
+            <section class="pagina-catalogo internas">
                 <div class="container">
-                    <header class="page-header text-center">
-                        <h2>Faça seu login para entrar na nossa Área do cliente.</h2></header>
-                    <form action="login-b2b.html" method="post" class="form-login">
-                        <div class="row">
-                            <div class="col-sm-6 col-sm-offset-3">
-                                <div class="form-group"><input type="text" placeholder="Login" name="login" required class="form-control input-lg"></div>
-                                <!-- .form-group-->
-                                <div class="form-group"><input type="password" placeholder="Senha" name="senha" required class="form-control input-lg"></div>
-                                <!-- .form-group-->
-                                <div class="form-group"><button type="submit" class="btn btn-block btn-primary btn-lg">ACESSAR</button></div>
-                                <!-- .form-group-->
-                            </div>
+                    <div class="row">
+                        <div class="col-md-12 area-texto">
+                            <p>Oferecemos a linha de iluminação para usos em empresas, estabelecimentos comerciais e residências, até por uma tendência de mercado a Lumilux vem se aprimorando e trabalhando na constante necessidade dos nossos clientes em
+                                produtos inovadores, econômicos e eficientes. A nossa linha inclui projetores, lâmpadas fluorescente e em led, reatores, tudo para deixar os ambientes mais confortáveis, funcionais, seguros e atrativos. Você pode conferir
+                                o catálogo de nossos forncedores abaixo.</p>
                         </div>
-                        <!-- .row-->
-                    </form>
+                    </div>
+                    <div class="interna-fornecedores">
+                        <div class="box-fornecedor">
+                            <a href="#">
+                                <figure><img src="imagens/conteudo/fornecedor-1.png" alt="Imagem do fornecedor" class="img-responsive"></figure>
+                            </a>
+                        </div>
+                        <div class="box-fornecedor">
+                            <a href="#">
+                                <figure><img src="imagens/conteudo/fornecedor-2.png" alt="Imagem do fornecedor" class="img-responsive"></figure>
+                            </a>
+                        </div>
+                        <div class="box-fornecedor">
+                            <a href="#">
+                                <figure><img src="imagens/conteudo/fornecedor-3.png" alt="Imagem do fornecedor" class="img-responsive"></figure>
+                            </a>
+                        </div>
+                        <div class="box-fornecedor">
+                            <a href="#">
+                                <figure><img src="imagens/conteudo/fornecedor-4.png" alt="Imagem do fornecedor" class="img-responsive"></figure>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- .interna-fornecedores-->
                 </div>
             </section>
         </div>

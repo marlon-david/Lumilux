@@ -1,0 +1,49 @@
+extend common/template.jade
+
+block title
+    title Catálogo
+
+block active
+    -var currentUrl = "cata"
+
+block conteudo
+    nav.menu-produtos.mgt-60
+        ul.nav.container
+            li.active
+                a(href="#") #[i.icone.iluminacao] ILUMINAÇÃO
+            li
+                a(href="#") #[i.icone.fios-cabos] FIOS E CABOS
+            li
+                a(href="#") #[i.icone.automacao-controle] AUTOMAÇÃO E CONTROLE
+            li
+                a(href="#") #[i.icone.instalacao-eletrica] INSTALAÇÃO ELÉTRICA
+            li
+                a(href="#") #[i.icone.comando-sinalizacao] COMANDO E SINALIZAÇÃO
+    //- fim .menu-produtos
+
+    section.pagina-catalogo.internas
+        .container
+            .row
+                .col-md-12.area-texto
+                    p Oferecemos a linha de iluminação para usos em empresas, estabelecimentos comerciais e residências, até por uma tendência de mercado a Lumilux vem se aprimorando e trabalhando na constante necessidade dos nossos clientes em produtos inovadores, econômicos e eficientes. A nossa linha inclui projetores, lâmpadas fluorescente e em led, reatores, tudo para deixar os ambientes mais confortáveis, funcionais, seguros e atrativos. Você pode conferir o catálogo de nossos forncedores abaixo.
+            
+            .interna-fornecedores
+                .box-fornecedor
+                    a(href="#")
+                        figure
+                            img(src="imagens/conteudo/fornecedor-1.png",alt="Imagem do fornecedor").img-responsive
+                .box-fornecedor
+                    a(href="#")
+                        figure
+                            img(src="imagens/conteudo/fornecedor-2.png",alt="Imagem do fornecedor").img-responsive
+                .box-fornecedor
+                    a(href="#")
+                        figure
+                            img(src="imagens/conteudo/fornecedor-3.png",alt="Imagem do fornecedor").img-responsive
+                .box-fornecedor
+                    a(href="#")
+                        figure
+                            img(src="imagens/conteudo/fornecedor-4.png",alt="Imagem do fornecedor").img-responsive
+            // .interna-fornecedores
+
+    //- .internas
