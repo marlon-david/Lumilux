@@ -11601,6 +11601,26 @@ a:hover i.icone.pager-next {
   height: 19px;
   background-position: -235px -20px; }
 
+.area-solucoes .row-solucao i.icone.varejo {
+  width: 55px;
+  height: 55px;
+  background-position: 0px -144px; }
+
+.area-solucoes .row-solucao i.icone.spot {
+  width: 56px;
+  height: 56px;
+  background-position: -55px -144px; }
+
+.area-solucoes .row-solucao i.icone.kam {
+  width: 57px;
+  height: 57px;
+  background-position: -111px -144px; }
+
+.area-solucoes .row-solucao i.icone.servicos {
+  width: 59px;
+  height: 59px;
+  background-position: -168px -144px; }
+
 .header-topo {
   position: relative; }
   .header-topo .redes-sociais {
@@ -11830,6 +11850,13 @@ a:hover i.icone.pager-next {
     text-align: center; }
 
 @font-face {
+  font-family: 'open_sansregular';
+  src: url("../fonts/opensans_regular/opensans-regular-webfont.eot");
+  src: url("../fonts/opensans_regular/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans_regular/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans_regular/opensans-regular-webfont.woff") format("woff"), url("../fonts/opensans_regular/opensans-regular-webfont.ttf") format("truetype"), url("../fonts/opensans_regular/opensans-regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: 'latolight';
   src: url("../fonts/lato-light-webfont.eot");
   src: url("../fonts/lato-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-light-webfont.woff2") format("woff2"), url("../fonts/lato-light-webfont.woff") format("woff"), url("../fonts/lato-light-webfont.ttf") format("truetype"), url("../fonts/lato-light-webfont.svg#latolight") format("svg");
@@ -11852,7 +11879,7 @@ a:hover i.icone.pager-next {
 
 @font-face {
   font-family: 'latolight_italic';
-  src: url("lato-ligita-webfont.woff2") format("woff2"), url("lato-ligita-webfont.woff") format("woff");
+  src: url("../fonts/lato-ligita-webfont.woff2") format("woff2"), url("../fonts/lato-ligita-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -12144,6 +12171,87 @@ form.busca .input-group .form-control, form.busca .input-group .btn {
       border: 2px solid #FFF; }
       .banners .owl-pagination .owl-page.active {
         background: #FFF; }
+
+.internas {
+  padding-left: 30px;
+  padding-right: 30px; }
+  .internas .area-texto p {
+    font-family: 'latolight', sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    text-align: justify; }
+
+.pagina-solucoes .page-header {
+  border-bottom: 1px solid #696969;
+  margin-bottom: 60px;
+  margin-top: 80px; }
+  .pagina-solucoes .page-header h2 {
+    margin-bottom: 20px; }
+
+@media (min-width: 992px) {
+  .pagina-solucoes .area-solucoes .row-solucao .col-imagem:before {
+    background-color: #2D4959;
+    content: '';
+    height: 1px;
+    left: 80%;
+    position: absolute;
+    top: 32px;
+    width: 30%; }
+  .pagina-solucoes .area-solucoes .row-solucao .col-imagem:after {
+    background-color: #2D4959;
+    border-radius: 50%;
+    content: '';
+    height: 7px;
+    left: 110%;
+    position: absolute;
+    top: 29px;
+    width: 7px; }
+  .pagina-solucoes .area-solucoes .row-solucao .col-imagem figure {
+    position: relative; }
+    .pagina-solucoes .area-solucoes .row-solucao .col-imagem figure:after {
+      background-color: #2D4959;
+      content: '';
+      height: 20px;
+      left: 100%;
+      position: absolute;
+      top: 23px;
+      width: 3px; }
+  .pagina-solucoes .area-solucoes .row-solucao .col-texto {
+    padding-left: 80px; }
+  .pagina-solucoes .area-solucoes .row-solucao:nth-child(even) .col-imagem {
+    left: 66.66667%; }
+    .pagina-solucoes .area-solucoes .row-solucao:nth-child(even) .col-imagem:before {
+      left: -80%;
+      width: 100%; }
+    .pagina-solucoes .area-solucoes .row-solucao:nth-child(even) .col-imagem:after {
+      left: -80%; }
+    .pagina-solucoes .area-solucoes .row-solucao:nth-child(even) .col-imagem figure:after {
+      left: -3px; }
+  .pagina-solucoes .area-solucoes .row-solucao:nth-child(even) .col-texto {
+    right: 33.33333%;
+    padding-left: 15px;
+    padding-right: 80px; } }
+
+.pagina-solucoes .area-solucoes .row-solucao {
+  margin-bottom: 50px;
+  margin-top: 50px; }
+  .pagina-solucoes .area-solucoes .row-solucao header h3 {
+    color: #277fd1;
+    font-family: 'latobold', sans-serif;
+    font-size: 24px; }
+    .pagina-solucoes .area-solucoes .row-solucao header h3 .icone {
+      margin-right: 15px; }
+  .pagina-solucoes .area-solucoes .row-solucao .col-imagem {
+    text-align: center; }
+    .pagina-solucoes .area-solucoes .row-solucao .col-imagem figure {
+      border-bottom: 7px solid #277FD1;
+      display: inline-block;
+      padding-bottom: 4px; }
+  .pagina-solucoes .area-solucoes .row-solucao .col-texto p {
+    font-family: 'latolight', sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    text-align: justify; }
 
 @media (min-width: 1366px) {
   .container {

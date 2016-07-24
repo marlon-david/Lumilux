@@ -42,3 +42,10 @@ a:hover i.icone {
 	&.pager-prev {@include make-icon(25px, 19px, -210px -20px);}
 	&.pager-next {@include make-icon(25px, 19px, -235px -20px);}
 }
+
+.area-solucoes .row-solucao i.icone {
+	&.varejo {@include make-icon(55px, 55px, 0px -144px);}
+	&.spot {@include make-icon(56px, 56px, -55px -144px);}
+	&.kam {@include make-icon(57px, 57px, -111px -144px);}
+	&.servicos {@include make-icon(59px, 59px, -168px -144px);}
+}
