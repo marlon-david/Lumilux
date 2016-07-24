@@ -8,6 +8,28 @@
         line-height: 1.6;
         text-align: justify;
     }
+
+    input.form-control,
+    select.form-control,
+    textarea.form-control {
+        border: 2px solid #696969;
+        border-radius: 0;
+        box-shadow: none;
+
+        &:active,
+        &:focus {
+            border-color: $cor-default;
+        }
+    }
+    textarea.form-control {
+        min-height: 83px;
+    }
+
+    .btn-primary {
+        background-color: $cor-default;
+        border: none;
+        border-radius: 0;
+    }
 }
 
 .pagina-solucoes {
@@ -122,6 +144,57 @@
                     text-align: justify;
                 }
             }
+        }
+    }
+}
+
+.pagina-contato {
+    .page-header h1 {
+        color: $cor-default;
+        font-family: 'latobold', sans-serif;
+        font-size: 24px;
+        margin-top: 60px;
+    }
+
+    .area-texto {
+        margin-bottom: 23px;
+
+        p {
+            color: #696969;
+            font-family: 'latobold', sans-serif;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+    }
+
+    .form-contato {
+        padding-top: 52px;
+        position: relative;
+
+        &:before {
+            content: '';
+            background-color: $cor-default;
+            height: 1px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 40%;
+        }
+
+        .row {
+            margin-left: -5px;
+            margin-right: -5px;
+
+            > div {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+
+        button {
+            font-family: 'latoblack', sans-serif;
+            font-size: 22px;
+            padding: 5px 0;
         }
     }
 }

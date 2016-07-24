@@ -11902,26 +11902,6 @@ a {
 .page-header {
   padding-bottom: 0;
   border: none; }
-  .page-header h1 {
-    position: relative;
-    z-index: 3;
-    font-family: "RalewayMedium";
-    font-size: 30px;
-    color: #444444; }
-    .page-header h1:before {
-      content: "";
-      width: 40px;
-      height: 40px;
-      background: #277fd1;
-      position: absolute;
-      top: calc(50% - 20px);
-      left: -15px;
-      z-index: -1;
-      -webkit-transform: rotate(45deg);
-      -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      -o-transform: rotate(45deg);
-      transform: rotate(45deg); }
 
 .menu-produtos {
   background-color: #277fd1;
@@ -12180,6 +12160,24 @@ form.busca .input-group .form-control, form.busca .input-group .btn {
     font-size: 17px;
     line-height: 1.6;
     text-align: justify; }
+  .internas input.form-control,
+  .internas select.form-control,
+  .internas textarea.form-control {
+    border: 2px solid #696969;
+    border-radius: 0;
+    box-shadow: none; }
+    .internas input.form-control:active, .internas input.form-control:focus,
+    .internas select.form-control:active,
+    .internas select.form-control:focus,
+    .internas textarea.form-control:active,
+    .internas textarea.form-control:focus {
+      border-color: #277fd1; }
+  .internas textarea.form-control {
+    min-height: 83px; }
+  .internas .btn-primary {
+    background-color: #277fd1;
+    border: none;
+    border-radius: 0; }
 
 .pagina-solucoes .page-header {
   border-bottom: 1px solid #696969;
@@ -12252,6 +12250,42 @@ form.busca .input-group .form-control, form.busca .input-group .btn {
     font-size: 17px;
     line-height: 1.6;
     text-align: justify; }
+
+.pagina-contato .page-header h1 {
+  color: #277fd1;
+  font-family: 'latobold', sans-serif;
+  font-size: 24px;
+  margin-top: 60px; }
+
+.pagina-contato .area-texto {
+  margin-bottom: 23px; }
+  .pagina-contato .area-texto p {
+    color: #696969;
+    font-family: 'latobold', sans-serif;
+    font-size: 14px;
+    margin-bottom: 0; }
+
+.pagina-contato .form-contato {
+  padding-top: 52px;
+  position: relative; }
+  .pagina-contato .form-contato:before {
+    content: '';
+    background-color: #277fd1;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40%; }
+  .pagina-contato .form-contato .row {
+    margin-left: -5px;
+    margin-right: -5px; }
+    .pagina-contato .form-contato .row > div {
+      padding-left: 5px;
+      padding-right: 5px; }
+  .pagina-contato .form-contato button {
+    font-family: 'latoblack', sans-serif;
+    font-size: 22px;
+    padding: 5px 0; }
 
 @media (min-width: 1366px) {
   .container {
