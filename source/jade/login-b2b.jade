@@ -1,0 +1,27 @@
+extend common/template.jade
+
+block title
+    title Login
+
+block conteudo
+    section.internas.pagina-login
+        .container
+            header.page-header.text-center
+                h2 Faça seu login para entrar na nossa Área do cliente.
+            //- page-header
+
+            form(action="login-b2b.html",method="post").form-login
+                .row
+                    .col-sm-6.col-sm-offset-3
+                        .form-group
+                            input(type="text",placeholder="Login",name="login",required).form-control.input-lg
+                        // .form-group
+                        .form-group
+                            input(type="password",placeholder="Senha",name="senha",required).form-control.input-lg
+                        // .form-group
+                        .form-group
+                            button(type="submit").btn.btn-block.btn-primary.btn-lg ACESSAR
+                        // .form-group
+                // .row
+
+    //- .internas

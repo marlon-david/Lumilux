@@ -11890,6 +11890,13 @@ a:hover i.icone.pager-next {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'latobold_italic';
+  src: url("../fonts/lato-bolita-webfont.eot");
+  src: url("../fonts/lato-bolita-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-bolita-webfont.woff") format("woff"), url("../fonts/lato-bolita-webfont.ttf") format("truetype"), url("../fonts/lato-bolita-webfont.svg#latobold_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 a {
   color: inherit; }
 
@@ -12251,24 +12258,24 @@ form.busca .input-group .form-control, form.busca .input-group .btn {
     line-height: 1.6;
     text-align: justify; }
 
-.pagina-contato .page-header h1 {
+.pagina-contato-orcamento .page-header h1 {
   color: #277fd1;
   font-family: 'latobold', sans-serif;
   font-size: 24px;
   margin-top: 60px; }
 
-.pagina-contato .area-texto {
+.pagina-contato-orcamento .area-texto {
   margin-bottom: 23px; }
-  .pagina-contato .area-texto p {
+  .pagina-contato-orcamento .area-texto p {
     color: #696969;
     font-family: 'latobold', sans-serif;
     font-size: 14px;
     margin-bottom: 0; }
 
-.pagina-contato .form-contato {
+.pagina-contato-orcamento .form-contato {
   padding-top: 52px;
   position: relative; }
-  .pagina-contato .form-contato:before {
+  .pagina-contato-orcamento .form-contato:before {
     content: '';
     background-color: #277fd1;
     height: 1px;
@@ -12276,16 +12283,25 @@ form.busca .input-group .form-control, form.busca .input-group .btn {
     left: 0;
     top: 0;
     width: 40%; }
-  .pagina-contato .form-contato .row {
+  .pagina-contato-orcamento .form-contato .row {
     margin-left: -5px;
     margin-right: -5px; }
-    .pagina-contato .form-contato .row > div {
+    .pagina-contato-orcamento .form-contato .row > div {
       padding-left: 5px;
       padding-right: 5px; }
-  .pagina-contato .form-contato button {
+  .pagina-contato-orcamento .form-contato button {
     font-family: 'latoblack', sans-serif;
     font-size: 22px;
     padding: 5px 0; }
+
+.pagina-login .page-header h2 {
+  font-family: 'latobold_italic', sans-serif;
+  font-size: 18px; }
+
+.pagina-login .form-control.input-lg, .pagina-login .input-group-lg > .form-control, .pagina-login
+.input-group-lg > .input-group-btn > .form-control.btn {
+  height: 40px;
+  padding: 7px 16px; }
 
 @media (min-width: 1366px) {
   .container {

@@ -1,13 +1,13 @@
 extend common/template.jade
 
 block title
-    title Soluções
+    title Orçamento
 
 block active
     -var currentUrl = "orca"
 
 block conteudo
-    section.internas.pagina-contato
+    section.internas.pagina-contato-orcamento
         .container
             .row
                 .col-md-5
@@ -21,7 +21,7 @@ block conteudo
                 //- .col
             //- row
             
-            form(action="contato.html",method="post").form-contato
+            form(action="orcamento.html",method="post").form-contato
                 .row
                     .col-sm-6.form-group
                         input(type="text",placeholder="Nome",name="nome",required).form-control

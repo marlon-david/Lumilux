@@ -148,7 +148,7 @@
     }
 }
 
-.pagina-contato {
+.pagina-contato-orcamento {
     .page-header h1 {
         color: $cor-default;
         font-family: 'latobold', sans-serif;
@@ -196,5 +196,17 @@
             font-size: 22px;
             padding: 5px 0;
         }
+    }
+}
+
+.pagina-login {
+    .page-header h2 {
+        font-family: 'latobold_italic', sans-serif;
+        font-size: 18px;
+    }
+
+    .form-control.input-lg {
+        height: 40px;
+        padding: 7px 16px;
     }
 }

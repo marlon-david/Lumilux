@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
     <head>
-        <title>Contato</title>
+        <title>Login</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#277fd1">
@@ -22,13 +22,13 @@
                         <!-- MENU-->
                         <nav class="menu-header">
                             <ul id="menu" class="collapse unlistenner">
-                                <li><a href="index.html">Inicial</a></li>
+                                <li class="active"><a href="index.html">Inicial</a></li>
                                 <li><a href="solucoes.html">Soluções</a></li>
                                 <li><a href="servicos.html">Área do Cliente</a></li>
                                 <li><a href="clientes.html">Loja Virtual</a></li>
                                 <li><a href="orcamento.html">Catálogo</a></li>
                                 <li><a href="orcamento.html">Orçamento</a></li>
-                                <li class="active"><a href="contato.html">Contato</a></li>
+                                <li><a href="contato.html">Contato</a></li>
                             </ul>
                         </nav>
                         <!-- REDES SOCIAIS-->
@@ -38,42 +38,22 @@
                         <!-- CARRINHO--><a href="#" class="box-carrinho"><i class="icone carrinho"></i><span>Meu carrinho</span><strong>0 itens</strong></a></div>
                 </div>
             </header>
-            <section class="internas pagina-contato-orcamento">
+            <section class="internas pagina-login">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <header class="page-header">
-                                <h1>FALE CONOSCO</h1></header>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 area-texto">
-                            <p>Preencha os campos abaixo, e envie-nos suas dúvidas e sugestões. Todos campos são obrigatórios.</p>
-                            <p>Desde já agradecemos o seu contato.</p>
-                        </div>
-                    </div>
-                    <form action="contato.html" method="post" class="form-contato">
+                    <header class="page-header text-center">
+                        <h2>Faça seu login para entrar na nossa Área do cliente.</h2></header>
+                    <form action="login-b2b.html" method="post" class="form-login">
                         <div class="row">
-                            <div class="col-sm-6 form-group"><input type="text" placeholder="Nome" name="nome" required class="form-control"></div>
-                            <div class="col-sm-6 form-group"><input type="email" placeholder="E-mail" name="email" required class="form-control"></div>
-                        </div>
-                        <!-- .row-->
-                        <div class="row">
-                            <div class="col-sm-4 form-group"><input type="text" placeholder="Cidade" name="cidade" required class="form-control"></div>
-                            <div class="col-sm-4 form-group"><select name="estado" required class="form-control"><option value="">Estado</option></select></div>
-                            <div class="col-sm-4 form-group"><input type="tel" placeholder="Telefone" name="telefone" required class="form-control"></div>
-                        </div>
-                        <!-- .row-->
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="form-group"><input type="text" placeholder="Assunto" name="assunto" required class="form-control"></div>
-                                <div class="form-group"><input type="text" placeholder="Departamento" name="departamento" required class="form-control"></div>
+                            <div class="col-sm-6 col-sm-offset-3">
+                                <div class="form-group"><input type="text" placeholder="Login" name="login" required class="form-control input-lg"></div>
+                                <!-- .form-group-->
+                                <div class="form-group"><input type="password" placeholder="Senha" name="senha" required class="form-control input-lg"></div>
+                                <!-- .form-group-->
+                                <div class="form-group"><button type="submit" class="btn btn-block btn-primary btn-lg">ACESSAR</button></div>
+                                <!-- .form-group-->
                             </div>
-                            <div class="col-sm-8 form-group"><textarea name="mensagem" placeholder="Mensagem" required class="form-control"></textarea></div>
                         </div>
                         <!-- .row-->
-                        <div class="form-group"><button type="submit" class="btn btn-block btn-primary btn-lg">ENVIAR</button></div>
-                        <!-- .form-group-->
                     </form>
                 </div>
             </section>
