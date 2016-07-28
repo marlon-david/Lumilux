@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title>Carrinho</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#277fd1">
+        <link rel="stylesheet" type="text/css" href="styles/estilos.min.css">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    </head>
+
+    <body><noscript><div class="alert alert-warning text-center"><h1>Seu navegador está com os scripts desabilitados!</h1><p>Para melhor funcionamento do site, habilite-os.</p></div></noscript>
+        <div class="wrapper">
+            <header class="header-topo">
+                <div class="container">
+                    <div class="header-flex">
+                        <div class="navbar-header">
+                            <figure class="logo">
+                                <a href="index.html"><img src="imagens/estrutural/logo.png" alt="" title="" class="img-responsive"></a>
+                            </figure><button data-toggle="collapse" data-target="#menu" class="navbar-toggle collapsed"><i class="fa fa-bars"></i></button></div>
+                        <!-- MENU-->
+                        <nav class="menu-header">
+                            <ul id="menu" class="collapse unlistenner">
+                                <li><a href="index.html">Inicial</a></li>
+                                <li><a href="solucoes.html">Soluções</a></li>
+                                <li><a href="servicos.html">Área do Cliente</a></li>
+                                <li><a href="clientes.html">Loja Virtual</a></li>
+                                <li><a href="catalogo.html">Catálogo</a></li>
+                                <li><a href="orcamento.html">Orçamento</a></li>
+                                <li><a href="contato.html">Contato</a></li>
+                            </ul>
+                        </nav>
+                        <!-- REDES SOCIAIS-->
+                        <div class="redes-sociais"><a href="#" class="facebook"><i class="fa fa-facebook-square"></i></a><a href="#" class="linkedin"><i class="fa fa-linkedin-square"></i></a></div>
+                    </div>
+                    <div class="header-bottom">
+                        <!-- CARRINHO--><a href="carrinho.html" class="box-carrinho"><i class="icone carrinho"></i><span>Meu carrinho</span><strong>0 itens</strong></a></div>
+                </div>
+            </header>
+            <nav class="menu-carrinho mgt-20">
+                <ul class="nav container">
+                    <li class="active"><a href="#"><i class="icone carrinho"></i> MEU CARRINHO</a></li>
+                    <li><a href="#"><i class="icone finalizar"></i> FINALIZAR COMPRA</a></li>
+                </ul>
+            </nav>
+            <section class="pagina-carrinho internas">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <header class="page-header">
+                                <h2>PRODUTOS</h2></header>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-carrinho">
+                            <thead>
+                                <tr>
+                                    <th width="30%">PRODUTO</th>
+                                    <th width="25%">PREÇO</th>
+                                    <th width="25%">QUANTIDADE</th>
+                                    <th width="20%" class="text-right">VALOR</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="row">
+                                            <figure class="col-xs-5"><img src="http://placehold.it/143x123/6F6F6F/FFF" alt="Imagem" class="img-responsive"></figure>
+                                            <div class="col-xs-7">
+                                                <p class="nome">Descrição do produto</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">R$ XX,XX</td>
+                                    <td class="text-center">
+                                        <form><input type="number" min="0" max="99" value="1" class="form-control"></form>
+                                    </td>
+                                    <td class="text-right">R$ XX,XX</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="row">
+                                            <figure class="col-xs-5"><img src="http://placehold.it/143x123/6F6F6F/FFF" alt="Imagem" class="img-responsive"></figure>
+                                            <div class="col-xs-7">
+                                                <p class="nome">Descrição do produto</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">R$ XX,XX</td>
+                                    <td class="text-center">
+                                        <form><input type="number" min="0" max="99" value="1" class="form-control"></form>
+                                    </td>
+                                    <td class="text-right">R$ XX,XX</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="row">
+                                            <figure class="col-xs-5"><img src="http://placehold.it/143x123/6F6F6F/FFF" alt="Imagem" class="img-responsive"></figure>
+                                            <div class="col-xs-7">
+                                                <p class="nome">Descrição do produto</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-center">R$ XX,XX</td>
+                                    <td class="text-center">
+                                        <form><input type="number" min="0" max="99" value="1" class="form-control"></form>
+                                    </td>
+                                    <td class="text-right">R$ XX,XX</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- table-->
+                    </div>
+                    <!-- .table-responsive-->
+                    <div class="text-right mgb-30"><a href="#" class="btn btn-default">LIMPAR CARRINHO</a></div>
+                    <div class="total-box">
+                        <div class="row">
+                            <div class="col-sm-6">Valor total da sua compra incluindo o frete.</div>
+                            <div class="col-sm-6 text-right">R$ XX,XX</div>
+                        </div>
+                    </div>
+                    <div class="row mgt-40">
+                        <div class="col-sm-6 mgb-20"><a href="#" class="btn btn-grey btn-lg">CONTINUAR COMPRANDO</a></div>
+                        <div class="col-sm-6 mgb-20 text-right"><a href="#" class="btn btn-grey btn-lg">CONCLUIR SUA COMPRA</a></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- /.wrapper-->
+        <footer class="rodape">
+            <section class="area-contato">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-7 area-newsletter">
+                            <h3>RECEBA NOSSO INFORMATIVO</h3>
+                            <p>Deixe seu nome e email no espaço a baixo e receba nossas novidades.</p>
+                            <form class="form-inline"><input type="text" name="nome" placeholder="Nome" class="form-control input-sm"><input type="email" name="email" placeholder="Email" class="form-control input-sm"><input type="submit" value="OK" class="btn btn-primary btn-sm"></form>
+                        </div>
+                        <div class="col-md-4 col-sm-5 col-contato">
+                            <h3><i class="icone telefone"></i> CONTATO</h3>
+                            <p>Matriz - Lumilux Suprimentos Industriais Ltda</p>
+                            <p>Rua das Canjeranas, 223 – Jabaquara</p>
+                            <p>São Paulo | SP - CEP 04349-020</p>
+                            <p>Fone: +55 11 33881800</p>
+                            <p><i class="icone email"></i> contato@lumilux.com.br</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="creditos">
+                <div class="container">
+                    <p>Lumilux © 2016 Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
+        <script src="js/starter.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <!--[if lt IE 10]>
+	<script>message_IE();</script>
+<![endif]-->
+    </body>
+
+</html>

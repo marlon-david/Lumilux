@@ -28,6 +28,8 @@ i.icone {
 
 	&.telefone {@include make-icon(21px, 21px, -263px 0px);}
 	&.email {@include make-icon(21px, 16px, -210px -41px);}
+
+	&.finalizar {@include make-icon(26px, 26px, -227px -144px);}
 }
 li.active a i.icone,
 li:hover a i.icone {
@@ -36,6 +38,16 @@ li:hover a i.icone {
 	&.automacao-controle {@include make-icon(28px, 27px, -96px 0px);}
 	&.instalacao-eletrica {@include make-icon(37px, 19px, -127px 0px);}
 	&.comando-sinalizacao {@include make-icon(34px, 29px, -170px 0px);}
+
+}
+
+.menu-carrinho li a i.icone {
+	&.carrinho {@include make-icon(32px, 26px, -231px -39px);}
+}
+.menu-carrinho li:hover a i.icone,
+.menu-carrinho li.active a i.icone {
+	&.carrinho {@include make-icon(32px, 26px, 0px 0px);}
+	&.finalizar {@include make-icon(26px, 26px, -253px -144px);}
 }
 
 a:hover i.icone {

@@ -11560,6 +11560,10 @@ i.icone {
     width: 21px;
     height: 16px;
     background-position: -210px -41px; }
+  i.icone.finalizar {
+    width: 26px;
+    height: 26px;
+    background-position: -227px -144px; }
 
 li.active a i.icone.iluminacao,
 li:hover a i.icone.iluminacao {
@@ -11590,6 +11594,23 @@ li:hover a i.icone.comando-sinalizacao {
   width: 34px;
   height: 29px;
   background-position: -170px 0px; }
+
+.menu-carrinho li a i.icone.carrinho {
+  width: 32px;
+  height: 26px;
+  background-position: -231px -39px; }
+
+.menu-carrinho li:hover a i.icone.carrinho,
+.menu-carrinho li.active a i.icone.carrinho {
+  width: 32px;
+  height: 26px;
+  background-position: 0px 0px; }
+
+.menu-carrinho li:hover a i.icone.finalizar,
+.menu-carrinho li.active a i.icone.finalizar {
+  width: 26px;
+  height: 26px;
+  background-position: -253px -144px; }
 
 a:hover i.icone.pager-prev {
   width: 25px;
@@ -12324,6 +12345,93 @@ form.busca .input-group .form-control, form.busca .input-group .btn {
     border-left: none; }
   .interna-fornecedores .box-fornecedor .img-responsive {
     margin: 0 auto; }
+
+.pagina-carrinho .page-header {
+  border-bottom: 1px solid #696969;
+  margin-bottom: 20px;
+  margin-top: 30px; }
+  .pagina-carrinho .page-header h2 {
+    color: #277fd1;
+    font-size: 24px;
+    margin-bottom: 10px; }
+
+.pagina-carrinho .table-carrinho thead th {
+  background-color: #696969;
+  border-bottom: 8px solid #FFF;
+  color: #32596F;
+  text-align: center; }
+  .pagina-carrinho .table-carrinho thead th.text-right {
+    text-align: right; }
+
+.pagina-carrinho .table-carrinho tbody td {
+  background-color: #EDEDED;
+  border-bottom: 8px solid #FFF;
+  color: #061830;
+  font-family: 'latobold', sans-serif;
+  font-size: 15px; }
+  .pagina-carrinho .table-carrinho tbody td p.nome {
+    color: #061830;
+    font-family: 'latobold', sans-serif;
+    font-size: 14px; }
+  .pagina-carrinho .table-carrinho tbody td input.form-control {
+    background: transparent;
+    display: inline-block;
+    border: none;
+    width: auto; }
+
+.pagina-carrinho .total-box {
+  background-color: #277fd1;
+  color: #FFF;
+  font-family: 'latobold', sans-serif;
+  font-size: 16px;
+  padding: 8px 15px; }
+  .pagina-carrinho .total-box .row > div:last-child {
+    font-size: 18px; }
+
+.pagina-carrinho .btn-default {
+  background-color: #FFF;
+  border: 1px solid #061830;
+  color: #061830;
+  font-family: 'latobold', sans-serif;
+  font-size: 16px;
+  padding: 2px 8px; }
+  .pagina-carrinho .btn-default:hover, .pagina-carrinho .btn-default:active, .pagina-carrinho .btn-default:focus {
+    background-color: #EDEDED; }
+
+.pagina-carrinho .btn-grey {
+  background-color: #696969;
+  border-radius: 0;
+  color: #FFF;
+  font-family: 'latoblack', 'latobold', sans-serif;
+  font-size: 18px; }
+
+.menu-carrinho {
+  background-color: #277fd1;
+  margin-bottom: 7px; }
+  .menu-carrinho ul.nav {
+    display: table;
+    width: 100%;
+    padding: 0 15px; }
+    .menu-carrinho ul.nav li {
+      display: table-cell;
+      height: 53px;
+      padding: 0;
+      text-align: center;
+      vertical-align: middle; }
+      .menu-carrinho ul.nav li a {
+        background-color: transparent;
+        color: #FFF;
+        font-family: 'latobold', sans-serif;
+        font-size: 16px;
+        line-height: 53px;
+        padding: 0 10px; }
+        .menu-carrinho ul.nav li a .icone {
+          margin: 0 5px; }
+      .menu-carrinho ul.nav li.active, .menu-carrinho ul.nav li:hover {
+        background-color: #FFF; }
+        .menu-carrinho ul.nav li.active a, .menu-carrinho ul.nav li:hover a {
+          background-color: transparent;
+          color: #696969; }
 
 @media (min-width: 1366px) {
   .container {

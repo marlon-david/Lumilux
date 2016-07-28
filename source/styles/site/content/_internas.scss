@@ -235,3 +235,126 @@
         }
     }
 }
+.pagina-carrinho {
+
+    .page-header {
+        border-bottom: 1px solid #696969;
+        margin-bottom: 20px;
+        margin-top: 30px;
+
+        h2 {
+            color: $cor-default;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .table-carrinho {
+        thead th {
+            background-color: #696969;
+            border-bottom: 8px solid #FFF;
+            color: #32596F;
+            text-align: center;
+
+            &.text-right {
+                text-align: right;
+            }
+        }
+
+        tbody td {
+            background-color: #EDEDED;
+            border-bottom: 8px solid #FFF;
+            color: #061830;
+            font-family: 'latobold', sans-serif;
+            font-size: 15px;
+
+            p.nome {
+                color: #061830;
+                font-family: 'latobold', sans-serif;
+                font-size: 14px;
+            }
+
+            input.form-control {
+                background: transparent;
+                display: inline-block;
+                border: none;
+                width: auto;
+            }
+        }
+    }
+
+    .total-box {
+        background-color: $cor-default;
+        color: #FFF;
+        font-family: 'latobold', sans-serif;
+        font-size: 16px;
+        padding: 8px 15px;
+
+        .row > div:last-child {
+            font-size: 18px;
+        }
+    }
+
+    .btn-default {
+        background-color: #FFF;
+        border: 1px solid #061830;
+        color: #061830;
+        font-family: 'latobold', sans-serif;
+        font-size: 16px;
+        padding: 2px 8px;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: #EDEDED;
+        }
+    }
+
+    .btn-grey {
+        background-color: #696969;
+        border-radius: 0;
+        color: #FFF;
+        font-family: 'latoblack', 'latobold', sans-serif;
+        font-size: 18px;
+    }
+}
+.menu-carrinho {
+    background-color: $cor-default;
+    margin-bottom: 7px;
+
+    ul.nav {
+        display: table;
+        width: 100%;
+        padding: 0 15px;
+
+        li {
+            display: table-cell;
+            height: 53px;
+            padding: 0;
+            text-align: center;
+            vertical-align: middle;
+
+            a {
+                background-color: transparent;
+                color: #FFF;
+                font-family: 'latobold', sans-serif;
+                font-size: 16px;
+                line-height: 53px;
+                padding: 0 10px;
+
+                .icone {
+                    margin: 0 5px;
+                }
+            }
+
+            &.active,
+            &:hover {
+                background-color: #FFF;
+                a {
+                    background-color: transparent;
+                    color: #696969;
+                }
+            }
+        }
+    }
+}

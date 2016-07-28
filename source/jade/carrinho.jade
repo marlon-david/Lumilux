@@ -1,0 +1,64 @@
+extend common/template.jade
+
+block title
+    title Carrinho
+
+block active
+    -var currentUrl = "carr"
+
+block conteudo
+    nav.menu-carrinho.mgt-20
+        ul.nav.container
+            li.active
+                a(href="#") #[i.icone.carrinho] MEU CARRINHO
+            li
+                a(href="#") #[i.icone.finalizar] FINALIZAR COMPRA
+    //- fim .menu-produtos
+
+    section.pagina-carrinho.internas
+        .container
+            .row
+                .col-md-4
+                    header.page-header
+                        h2 PRODUTOS
+                    //- page-header
+
+            .table-responsive
+                table.table.table-carrinho
+                    thead: tr
+                        th(width="30%") PRODUTO
+                        th(width="25%") PREÇO
+                        th(width="25%") QUANTIDADE
+                        th(width="20%").text-right VALOR
+                    tbody
+                        -for (var i=0;i<3;i++)
+                            tr
+                                td
+                                    .row
+                                        figure.col-xs-5: img(src="http://placehold.it/143x123/6F6F6F/FFF",alt="Imagem").img-responsive
+                                        .col-xs-7
+                                            p.nome Descrição do produto
+                                td.text-center R$ XX,XX
+                                td.text-center: form
+                                    input(type="number",min="0",max="99",value="1").form-control
+                                td.text-right R$ XX,XX
+                // table
+            // .table-responsive
+
+            div.text-right.mgb-30
+                a(href="#").btn.btn-default LIMPAR CARRINHO
+
+            .total-box
+                .row
+                    .col-sm-6
+                        | Valor total da sua compra incluindo o frete.
+                    .col-sm-6.text-right
+                        | R$ XX,XX
+
+            .row.mgt-40
+                .col-sm-6.mgb-20
+                    a(href="#").btn.btn-grey.btn-lg CONTINUAR COMPRANDO
+                .col-sm-6.mgb-20.text-right
+                    a(href="#").btn.btn-grey.btn-lg CONCLUIR SUA COMPRA
+
+    //- .internas
