@@ -1,0 +1,94 @@
+extend common/template.jade
+
+block title
+    title Loja Virtual
+
+block active
+    -var currentUrl = "loja"
+
+block conteudo
+    nav.menu-produtos.mgt-20
+        ul.nav.container
+            li.active
+                a(href="#") #[i.icone.iluminacao] ILUMINAÇÃO
+            li
+                a(href="#") #[i.icone.fios-cabos] FIOS E CABOS
+            li
+                a(href="#") #[i.icone.automacao-controle] AUTOMAÇÃO E CONTROLE
+            li
+                a(href="#") #[i.icone.instalacao-eletrica] INSTALAÇÃO ELÉTRICA
+            li
+                a(href="#") #[i.icone.comando-sinalizacao] COMANDO E SINALIZAÇÃO
+    //- fim .menu-produtos
+
+    section.pagina-loja.internas
+        .container
+            .breadcrumb Você está em:
+                ul
+                    li: a(href="index.html") Página Inicial
+                    li: a(href="loja.html") Loja Virtual
+                    li: a(href="index.html") Iluminação
+                    li.active: a(href="index.html") Lâmpadas LED
+
+            .form-group.form-pesquisa
+                form
+                    .col-md-2.col-xs-4
+                        label PESQUISAR POR
+                    .col-md-4.col-xs-8
+                        input(type="text",name="descricao",placeholder="DESCRIÇÃO").form-control
+                    .col-xs-3
+                        input(type="text",name="codigo",placeholder="CÓDIGO").form-control
+                    .col-xs-3
+                        input(type="text",name="marca",placeholder="MARCA").form-control
+            .row
+                aside.col-md-3
+                    .menu-lateral
+                        section.categorias
+                            header
+                                h3 CABOS
+                            //- page-header
+                            ul
+                                li
+                                    a(href="#",data-toggle="collapse",data-target="#categoria-1") #[i.fa.fa-play] Baixa Tensão
+                                    ul.collapse.in#categoria-1
+                                        li: a(href="#") Nexans
+                                        li: a(href="#") Prysmian
+                                        li: a(href="#") Sil
+                                        li: a(href="#") Nambei
+                                li
+                                    a(href="#",data-toggle="collapse",data-target="#categoria-2") #[i.fa.fa-play] Média Tensão
+                                    ul.collapse#categoria-2
+                                        li: a(href="#") Nexans
+                                        li: a(href="#") Prysmian
+                                        li: a(href="#") Sil
+                                        li: a(href="#") Nambei
+
+                .col-md-9
+                    .row.grade-produtos
+                        -for (var i=0;i<12;i++)
+                            .col-lg-3.col-md-4.col-sm-6
+                                div.produto
+                                    a(href="produto")
+                                        figure.foto: img(src="http://placehold.it/168x187/FFF",alt="Imagem").img-responsive
+                                        .info
+                                            p.nome Descrição do produto
+                                            small cód Lumilux 0000 0000
+                                            small cód Fabricante 0000 0000
+                                            strong.preco R$ XX,XX
+                                    a(href="#").plus
+                                        i.fa.fa-plus
+                    // .grade-produtos
+
+                    footer.text-center
+                        ul.pagination
+                            li: a(href="#") #[i.fa.fa-angle-left]
+                            li.active: span 1
+                            li: a(href="#") 2
+                            li: a(href="#") 3
+                            li: a(href="#") 4
+                            li: a(href="#") #[i.fa.fa-angle-right]
+                    // .pagination
+                // coluna-principal .col-md-9
+            // .row
+
+    //- .internas
