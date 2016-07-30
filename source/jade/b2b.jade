@@ -1,0 +1,109 @@
+extend common/template.jade
+
+block title
+    title B2B
+
+block active
+    -var currentUrl = "b2b"
+
+block conteudo
+    nav.menu-produtos.mgt-20
+        ul.nav.container
+            li.active
+                a(href="#") #[i.icone.iluminacao] ILUMINAÇÃO
+                ul.submenu
+                    li: a(href="#") SUBCATEGORIA 1
+                    li: a(href="#") SUBCATEGORIA 2
+                    li: a(href="#") SUBCATEGORIA 3
+                    li: a(href="#") SUBCATEGORIA 4
+            li
+                a(href="#") #[i.icone.fios-cabos] FIOS E CABOS
+            li
+                a(href="#") #[i.icone.automacao-controle] AUTOMAÇÃO E CONTROLE
+            li
+                a(href="#") #[i.icone.instalacao-eletrica] INSTALAÇÃO ELÉTRICA
+            li
+                a(href="#") #[i.icone.comando-sinalizacao] COMANDO E SINALIZAÇÃO
+    //- fim .menu-produtos
+
+    section.pagina-b2b.internas
+        .container
+            header.page-header
+                h1 SEJA BEM VINDO, #[strong ADRIANO]
+            // .page-header
+
+            .form-group.form-pesquisa
+                form
+                    .col-md-2.col-xs-4
+                        label PESQUISAR POR
+                    .col-md-4.col-xs-8
+                        input(type="text",name="descricao",placeholder="DESCRIÇÃO").form-control
+                    .col-xs-3
+                        input(type="text",name="seu_codigo",placeholder="SEU CÓDIGO").form-control
+                    .col-xs-3
+                        input(type="text",name="nosso_codigo",placeholder="NOSSO CÓDIGO").form-control
+            .row
+                aside.col-md-3
+                    .menu-lateral.menu-b2b
+                        section.categorias
+                            header
+                                h3 ILUMINAÇÃO
+                            //- page-header
+                            ul
+                                li
+                                    a(href="#",data-toggle="collapse",data-target="#categoria-1") #[i.fa.fa-play] Lâmpadas LED
+                                    ul.collapse.in#categoria-1
+                                        li: a(href="#") Philips
+                                        li: a(href="#") GE
+                                        li: a(href="#") Osram
+                                li
+                                    a(href="#categoria-2",data-toggle="collapse") #[i.fa.fa-play] Lâmpadas  Fluorescente
+                                    ul.collapse#categoria-2
+                                        li: a(href="#") Nexans
+                                        li: a(href="#") Prysmian
+                                        li: a(href="#") Sil
+                                        li: a(href="#") Nambei
+                                li
+                                    a(href="#") #[i.fa.fa-play] Lâmpadas Filamento
+                                li
+                                    a(href="#") #[i.fa.fa-play] Lâmpada de descarga
+                                li
+                                    a(href="#") #[i.fa.fa-play] Luminarias Industriais
+                                li
+                                    a(href="#") #[i.fa.fa-play] Luminarias Residenciais
+                                li
+                                    a(href="#") #[i.fa.fa-play] Reator
+
+                .col-md-9
+                    .table-responsive
+                        table.table.table-produtos
+                            tbody
+                                -for (var i=0;i<3;i++)
+                                    tr
+                                        td
+                                            p.nome Descrição do produto
+                                            p cód Lumilux - 0000 0000
+                                            p cód Fabricante - 0000 0000
+                                        td: strong.preco R$ XX,XX
+                                        td.text-center: form
+                                            input(type="number",min="0",max="99",value="1").form-control
+                                        td
+                                            a(href="carrinho.html").btn.btn-add-to-cart
+                                                i.icone.carrinho
+                                                span ADICIONAR AO CARRINHO
+                        // table
+                    // .table-responsive
+
+                    footer.text-center
+                        ul.pagination
+                            li: a(href="#") #[i.fa.fa-angle-left]
+                            li.active: span 1
+                            li: a(href="#") 2
+                            li: a(href="#") 3
+                            li: a(href="#") 4
+                            li: a(href="#") #[i.fa.fa-angle-right]
+                    // .pagination
+                // coluna-principal .col-md-9
+            // .row
+
+    //- .internas

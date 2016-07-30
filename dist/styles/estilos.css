@@ -11595,6 +11595,7 @@ li:hover a i.icone.comando-sinalizacao {
   height: 29px;
   background-position: -170px 0px; }
 
+.btn-add-to-cart i.icone.carrinho,
 .menu-carrinho li a i.icone.carrinho {
   width: 32px;
   height: 26px;
@@ -11918,6 +11919,13 @@ a:hover i.icone.pager-next {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'latoitalic';
+  src: url("../fonts/lato-italic-webfont.eot");
+  src: url("../fonts/lato-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-italic-webfont.woff") format("woff"), url("../fonts/lato-italic-webfont.ttf") format("truetype"), url("../fonts/lato-italic-webfont.svg#latoitalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 a {
   color: inherit; }
 
@@ -11945,22 +11953,36 @@ a {
     bottom: -4px; }
   .menu-produtos ul.nav {
     padding-right: 0; }
-    .menu-produtos ul.nav li {
+    .menu-produtos ul.nav > li {
       padding: 0; }
-      .menu-produtos ul.nav li a {
+      .menu-produtos ul.nav > li > a {
         background-color: transparent;
         color: #FFF;
         font-family: 'latobold', sans-serif;
         font-size: 13px;
         line-height: 76px;
         padding: 0 10px; }
-        .menu-produtos ul.nav li a .icone {
+        .menu-produtos ul.nav > li > a .icone {
           margin: 0 5px; }
-      .menu-produtos ul.nav li.active, .menu-produtos ul.nav li:hover {
+      .menu-produtos ul.nav > li.active, .menu-produtos ul.nav > li:hover {
         background-color: #FFF; }
-        .menu-produtos ul.nav li.active a, .menu-produtos ul.nav li:hover a {
+        .menu-produtos ul.nav > li.active > a, .menu-produtos ul.nav > li:hover > a {
           background-color: transparent;
           color: #277fd1; }
+      .menu-produtos ul.nav > li ul.submenu {
+        background-color: #1d25d7;
+        list-style-type: none;
+        margin: 0;
+        min-width: 160px;
+        padding: 0; }
+        .menu-produtos ul.nav > li ul.submenu li a {
+          color: #FFF;
+          display: block;
+          line-height: 40px;
+          padding-left: 35px;
+          text-align: left; }
+          .menu-produtos ul.nav > li ul.submenu li a:hover {
+            background-color: rgba(255, 255, 255, 0.2); }
 
 form.busca .input-group .form-control, form.busca .input-group .btn {
   background-color: #e5e5e5;
@@ -12284,9 +12306,14 @@ form.busca .input-group .form-control, form.busca .input-group .btn {
           text-decoration: none; }
           .internas .menu-lateral section.categorias > ul > li a .fa-play {
             margin-right: 5px;
-            transition: transform .2s linear;
+            -webkit-transition: -webkit-transform .2s linear;
+            transition: transform .2s linear; }
+          .internas .menu-lateral section.categorias > ul > li a.toggle-collapse .fa-play {
+            -webkit-transform: rotate(90deg);
             transform: rotate(90deg); }
+          .internas .menu-lateral section.categorias > ul > li a.toggle-collapse.collapsed .fa-play,
           .internas .menu-lateral section.categorias > ul > li a.collapsed .fa-play {
+            -webkit-transform: rotate(0deg);
             transform: rotate(0deg); }
         .internas .menu-lateral section.categorias > ul > li a:hover,
         .internas .menu-lateral section.categorias > ul > li.active a {
@@ -12294,6 +12321,26 @@ form.busca .input-group .form-control, form.busca .input-group .btn {
           color: #FFF; }
         .internas .menu-lateral section.categorias > ul > li > ul > li > a {
           padding-left: 39px; }
+    .internas .menu-lateral.menu-b2b section.categorias header {
+      background-color: #277fd1;
+      margin-bottom: 10px; }
+      .internas .menu-lateral.menu-b2b section.categorias header h3 {
+        border-bottom: none;
+        color: #FFF;
+        padding-bottom: 0; }
+    .internas .menu-lateral.menu-b2b section.categorias > ul {
+      padding: 0 15px; }
+      .internas .menu-lateral.menu-b2b section.categorias > ul > li {
+        border-bottom: 1px solid #277fd1;
+        padding: 4px 0; }
+        .internas .menu-lateral.menu-b2b section.categorias > ul > li a {
+          padding: 8px 0; }
+        .internas .menu-lateral.menu-b2b section.categorias > ul > li > a:hover,
+        .internas .menu-lateral.menu-b2b section.categorias > ul > li.active > a {
+          background-color: transparent;
+          color: #277fd1; }
+        .internas .menu-lateral.menu-b2b section.categorias > ul > li > ul > li > a {
+          padding-left: 24px; }
   .internas .grade-produtos .produto {
     margin-bottom: 60px;
     margin-left: auto;
@@ -12577,6 +12624,67 @@ form.busca .input-group .form-control, form.busca .input-group .btn {
           background-color: transparent;
           color: #696969; }
 
+.pagina-b2b .page-header {
+  margin-bottom: 65px;
+  margin-top: 60px;
+  text-align: center; }
+  .pagina-b2b .page-header h1 {
+    border-bottom: 1px solid #277fd1;
+    display: inline-block;
+    font-family: 'latoitalic', 'latoregular', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    max-width: 100%;
+    padding-bottom: 20px;
+    width: 524px; }
+    .pagina-b2b .page-header h1 strong {
+      font-family: 'latobold_italic', 'latobold', sans-serif; }
+
+.pagina-b2b .table-produtos > tbody > tr > td {
+  border-bottom: 1px solid #277fd1;
+  border-top: none;
+  vertical-align: bottom;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .pagina-b2b .table-produtos > tbody > tr > td:first-child {
+    width: 30%; }
+  .pagina-b2b .table-produtos > tbody > tr > td:nth-child(2) {
+    width: 43%; }
+  .pagina-b2b .table-produtos > tbody > tr > td p {
+    color: #696969;
+    font-size: 14px;
+    margin-bottom: 5px; }
+  .pagina-b2b .table-produtos > tbody > tr > td p.nome {
+    font-family: 'latobold', sans-serif;
+    font-size: 18px;
+    margin-bottom: 15px; }
+  .pagina-b2b .table-produtos > tbody > tr > td strong.preco {
+    color: #277fd1;
+    font-family: 'latobold', sans-serif;
+    font-size: 22px; }
+
+.pagina-b2b .btn.btn-add-to-cart {
+  background-color: #277fd1;
+  border-radius: 0;
+  color: #FFF;
+  padding-left: 29%;
+  position: relative;
+  white-space: normal;
+  width: 160px; }
+  .pagina-b2b .btn.btn-add-to-cart .icone {
+    position: absolute;
+    left: 5%;
+    margin-top: -13px;
+    top: 50%; }
+  .pagina-b2b .btn.btn-add-to-cart span {
+    border-left: 1px solid #FFF;
+    display: block;
+    font-family: 'latobold', sans-serif;
+    font-size: 12px;
+    line-height: 1;
+    padding-left: 11px;
+    text-align: left; }
+
 @media (min-width: 1366px) {
   .container {
     width: 1300px; } }
@@ -12596,8 +12704,20 @@ form.busca .input-group .form-control, form.busca .input-group .btn {
       height: 76px;
       text-align: center;
       vertical-align: middle; }
-      .menu-produtos ul.nav > li a {
+      .menu-produtos ul.nav > li > a {
         line-height: 76px; }
+      .menu-produtos ul.nav > li ul.submenu {
+        position: absolute;
+        display: none;
+        z-index: 100; }
+        .menu-produtos ul.nav > li ul.submenu li a {
+          padding-left: 10px;
+          padding-right: 10px;
+          line-height: 35px; }
+          .menu-produtos ul.nav > li ul.submenu li a:hover {
+            background-color: rgba(255, 255, 255, 0.2); }
+      .menu-produtos ul.nav > li:hover ul.submenu {
+        display: block; }
   .area-newsletter .form-control {
     min-width: 349px; } }
 

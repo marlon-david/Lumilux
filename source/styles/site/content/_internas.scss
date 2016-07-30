@@ -121,10 +121,18 @@
 
                         .fa-play {
                             margin-right: 5px;
+                            -webkit-transition: -webkit-transform .2s linear;
                             transition: transform .2s linear;
+                        }
+
+                        &.toggle-collapse .fa-play {
+                            -webkit-transform: rotate(90deg);
                             transform: rotate(90deg);
                         }
+
+                        &.toggle-collapse.collapsed .fa-play,
                         &.collapsed .fa-play {
+                            -webkit-transform: rotate(0deg);
                             transform: rotate(0deg);
                         }
                     }
@@ -137,6 +145,44 @@
 
                     > ul > li > a {
                         padding-left: 39px;
+                    }
+                }
+            }
+        }
+
+        &.menu-b2b {
+            section.categorias {
+                header {
+                    background-color: $cor-default;
+                    margin-bottom: 10px;
+
+                    h3 {
+                        border-bottom: none;
+                        color: #FFF;
+                        padding-bottom: 0;
+                    }
+                }
+
+                > ul {
+                    padding: 0 15px;
+
+                    > li {
+                        border-bottom: 1px solid $cor-default;
+                        padding: 4px 0;
+
+                        a {
+                            padding: 8px 0;
+                        }
+
+                        > a:hover,
+                        &.active > a {
+                            background-color: transparent;
+                            color: $cor-default;
+                        }
+
+                        > ul > li > a {
+                            padding-left: 24px;
+                        }
                     }
                 }
             }
@@ -567,6 +613,94 @@
                     color: #696969;
                 }
             }
+        }
+    }
+}
+
+.pagina-b2b {
+    .page-header {
+        margin-bottom: 65px;
+        margin-top: 60px;
+        text-align: center;
+
+        h1 {
+            border-bottom: 1px solid $cor-default;
+            display: inline-block;
+            font-family: 'latoitalic', 'latoregular', sans-serif;
+            font-size: 20px;
+            margin: 0;
+            max-width: 100%;
+            padding-bottom: 20px;
+            width: 524px;
+
+            strong {
+                font-family: 'latobold_italic', 'latobold', sans-serif;
+            }
+        }
+    }
+
+    .table-produtos {
+        > tbody > tr {
+            > td {
+                border-bottom: 1px solid $cor-default;
+                border-top: none;
+                vertical-align: bottom;
+                padding-top: 20px;
+                padding-bottom: 20px;
+
+                &:first-child {
+                    width: 30%;
+                }
+
+                &:nth-child(2) {
+                    width: 43%;
+                }
+
+                p {
+                    color: #696969;
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                }
+
+                p.nome {
+                    font-family: 'latobold', sans-serif;
+                    font-size: 18px;
+                    margin-bottom: 15px;
+                }
+
+                strong.preco {
+                    color: $cor-default;
+                    font-family: 'latobold', sans-serif;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+    .btn.btn-add-to-cart {
+        background-color: $cor-default;
+        border-radius: 0;
+        color: #FFF;
+        padding-left: 29%;
+        position: relative;
+        white-space: normal;
+        width: 160px;
+
+        .icone {
+            position: absolute;
+            left: 5%;
+            margin-top: -13px;
+            top: 50%;
+        }
+
+        span {
+            border-left: 1px solid #FFF;
+            display: block;
+            font-family: 'latobold', sans-serif;
+            font-size: 12px;
+            line-height: 1;
+            padding-left: 11px;
+            text-align: left;
         }
     }
 }

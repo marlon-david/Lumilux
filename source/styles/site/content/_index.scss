@@ -16,10 +16,10 @@
     ul.nav {
         padding-right: 0;
 
-        li {
+        > li {
             padding: 0;
 
-            a {
+            > a {
                 background-color: transparent;
                 color: #FFF;
                 font-family: 'latobold', sans-serif;
@@ -35,9 +35,29 @@
             &.active,
             &:hover {
                 background-color: #FFF;
-                a {
+                > a {
                     background-color: transparent;
                     color: $cor-default;
+                }
+            }
+
+            ul.submenu {
+                background-color: #1d25d7;
+                list-style-type: none;
+                margin: 0;
+                min-width: 160px;
+                padding: 0;
+
+                li a {
+                    color: #FFF;
+                    display: block;
+                    line-height: 40px;
+                    padding-left: 35px;
+                    text-align: left;
+
+                    &:hover {
+                        background-color: rgba(#FFF, .2);
+                    }
                 }
             }
         }

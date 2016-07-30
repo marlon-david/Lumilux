@@ -41,6 +41,7 @@ li:hover a i.icone {
 
 }
 
+.btn-add-to-cart i.icone,
 .menu-carrinho li a i.icone {
 	&.carrinho {@include make-icon(32px, 26px, -231px -39px);}
 }
