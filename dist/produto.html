@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title>Produto</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#277fd1">
+        <link rel="stylesheet" type="text/css" href="styles/estilos.min.css">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    </head>
+
+    <body><noscript><div class="alert alert-warning text-center"><h1>Seu navegador está com os scripts desabilitados!</h1><p>Para melhor funcionamento do site, habilite-os.</p></div></noscript>
+        <div class="wrapper">
+            <header class="header-topo">
+                <div class="container">
+                    <div class="header-flex">
+                        <div class="navbar-header">
+                            <figure class="logo">
+                                <a href="index.html"><img src="imagens/estrutural/logo.png" alt="" title="" class="img-responsive"></a>
+                            </figure><button data-toggle="collapse" data-target="#menu" class="navbar-toggle collapsed"><i class="fa fa-bars"></i></button></div>
+                        <!-- MENU-->
+                        <nav class="menu-header">
+                            <ul id="menu" class="collapse unlistenner">
+                                <li><a href="index.html">Inicial</a></li>
+                                <li><a href="solucoes.html">Soluções</a></li>
+                                <li><a href="login-b2b.html">Área do Cliente</a></li>
+                                <li><a href="loja.html">Loja Virtual</a></li>
+                                <li><a href="catalogo.html">Catálogo</a></li>
+                                <li><a href="orcamento.html">Orçamento</a></li>
+                                <li><a href="contato.html">Contato</a></li>
+                            </ul>
+                        </nav>
+                        <!-- REDES SOCIAIS-->
+                        <div class="redes-sociais"><a href="#" class="facebook"><i class="fa fa-facebook-square"></i></a><a href="#" class="linkedin"><i class="fa fa-linkedin-square"></i></a></div>
+                    </div>
+                    <div class="header-bottom">
+                        <!-- CARRINHO--><a href="carrinho.html" class="box-carrinho"><i class="icone carrinho"></i><span>Meu carrinho</span><strong>0 itens</strong></a></div>
+                </div>
+            </header>
+            <section class="pagina-produto internas">
+                <div class="container">
+                    <div class="breadcrumb">Você está em:
+                        <ul>
+                            <li><a href="index.html">Página Inicial</a></li>
+                            <li><a href="loja.html">Loja Virtual</a></li>
+                            <li><a href="index.html">Iluminação</a></li>
+                            <li class="active"><a href="index.html">Lâmpadas LED</a></li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="foto-produto">
+                                <ul id="miniaturas" class="miniaturas">
+                                    <li>
+                                        <a href="#" data-image="http://placehold.it/427x427" data-zoom-image="imagens/conteudo/lampadas.jpg"><img src="http://placehold.it/62x62"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-image="http://placehold.it/427x427/26FF5C" data-zoom-image="imagens/conteudo/lampadas.jpg"><img src="http://placehold.it/62x62/26FF5C"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-image="http://placehold.it/427x427/FF9326" data-zoom-image="imagens/conteudo/lampadas.jpg"><img src="http://placehold.it/62x62/FF9326"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-image="http://placehold.it/427x427/0080FF" data-zoom-image="imagens/conteudo/lampadas.jpg"><img src="http://placehold.it/62x62/0080FF"></a>
+                                    </li>
+                                </ul>
+                                <figure class="grande"><img src="http://placehold.it/427x427" data-zoom-image="imagens/conteudo/lampadas.jpg" id="img-zoom" class="img-responsive">
+                                    <figcaption><i class="icone busca"></i>PASSE O MOUSE PARA VER MAIS DETALHES</figcaption>
+                                </figure>
+                            </div>
+                            <!-- .foto-produto-->
+                        </div>
+                        <div class="col-md-6 col-md-offset-1 info-produto">
+                            <header class="page-header">
+                                <h1>NOME DO PRODUTO</h1>
+                                <p>Marca: Nome da marca</p>
+                            </header>
+                            <!-- .page-header-->
+                            <div class="area-preco"><span>Por:</span><strong><small>R$</small>100<small>,00</small></strong></div>
+                            <ul class="precos">
+                                <li>R$ 00,00 à vista</li>
+                                <li>0x sem juros de R$ 00,00</li>
+                                <li>0x com juros de R$ 00,00</li>
+                            </ul><a href="#formas" class="ver-formas scrollIntoView"><i class="icone olho"></i>ver mais formas de pagamento</a>
+                            <div class="row">
+                                <div class="col-sm-6 area-quantidade mgb-35"><label>QUANTIDADE</label><input type="number" name="quantidade" value="1" class="form-control"></div>
+                                <!-- .col-sm-6-->
+                                <div class="col-sm-6 mgb-35 text-center"><a href="carrinho.html" class="btn btn-add-to-cart-lg"><i class="icone carrinho-lg"></i><span>ADICIONAR AO CARRINHO</span></a></div>
+                                <!-- .col-sm-6-->
+                            </div>
+                            <!-- row-->
+                            <div class="area-frete">
+                                <div class="box"><i class="icone frete"></i><span>calcule seu frete</span></div><label>CEP</label><input type="text" name="cep1" maxlength="5" data-jump="cep2" size="5" id="cep1" class="form-control"><label>-</label><input type="text" name="cep2"
+                                    maxlength="3" size="3" id="cep2" class="form-control"></div>
+                        </div>
+                        <!-- coluna-principal-->
+                    </div>
+                    <!-- .row-->
+                    <section id="formas" class="area-formas-pagamento">
+                        <header>
+                            <h3>FORMAS DE PAGAMENTO</h3></header>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>Cartão Visa</td>
+                                    <td>à vista</td>
+                                    <td>R$ 00,00</td>
+                                    <td>Desconto de X%</td>
+                                </tr>
+                                <tr>
+                                    <td>Cartão Master Card</td>
+                                    <td>à vista</td>
+                                    <td>R$ 00,00</td>
+                                    <td>Desconto de X%</td>
+                                </tr>
+                                <tr>
+                                    <td>Cartão Diners</td>
+                                    <td>à vista</td>
+                                    <td>R$ 00,00</td>
+                                    <td>Desconto de X%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section class="area-similares">
+                        <header>
+                            <h3>PRODUTOS SIMILARES</h3></header>
+                        <div class="carousel-h similares-flex">
+                            <section id="carousel-similares" data-carousel="mult-items" data-md-qnt="6" data-sm-qnt="3" data-xs-qnt="1" class="owl-carousel order-md-2">
+                                <div class="item">
+                                    <div class="produto">
+                                        <a href="produto.html">
+                                            <figure class="foto"><img src="http://placehold.it/181x195/FFF" alt="Imagem" class="img-responsive"></figure>
+                                            <div class="info">
+                                                <p class="nome">Descrição do produto</p><a href="#" class="plus"><i class="fa fa-plus-circle"></i>VER MAIS</a></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="produto">
+                                        <a href="produto.html">
+                                            <figure class="foto"><img src="http://placehold.it/181x195/FFF" alt="Imagem" class="img-responsive"></figure>
+                                            <div class="info">
+                                                <p class="nome">Descrição do produto</p><a href="#" class="plus"><i class="fa fa-plus-circle"></i>VER MAIS</a></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="produto">
+                                        <a href="produto.html">
+                                            <figure class="foto"><img src="http://placehold.it/181x195/FFF" alt="Imagem" class="img-responsive"></figure>
+                                            <div class="info">
+                                                <p class="nome">Descrição do produto</p><a href="#" class="plus"><i class="fa fa-plus-circle"></i>VER MAIS</a></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="produto">
+                                        <a href="produto.html">
+                                            <figure class="foto"><img src="http://placehold.it/181x195/FFF" alt="Imagem" class="img-responsive"></figure>
+                                            <div class="info">
+                                                <p class="nome">Descrição do produto</p><a href="#" class="plus"><i class="fa fa-plus-circle"></i>VER MAIS</a></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="produto">
+                                        <a href="produto.html">
+                                            <figure class="foto"><img src="http://placehold.it/181x195/FFF" alt="Imagem" class="img-responsive"></figure>
+                                            <div class="info">
+                                                <p class="nome">Descrição do produto</p><a href="#" class="plus"><i class="fa fa-plus-circle"></i>VER MAIS</a></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="produto">
+                                        <a href="produto.html">
+                                            <figure class="foto"><img src="http://placehold.it/181x195/FFF" alt="Imagem" class="img-responsive"></figure>
+                                            <div class="info">
+                                                <p class="nome">Descrição do produto</p><a href="#" class="plus"><i class="fa fa-plus-circle"></i>VER MAIS</a></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="produto">
+                                        <a href="produto.html">
+                                            <figure class="foto"><img src="http://placehold.it/181x195/FFF" alt="Imagem" class="img-responsive"></figure>
+                                            <div class="info">
+                                                <p class="nome">Descrição do produto</p><a href="#" class="plus"><i class="fa fa-plus-circle"></i>VER MAIS</a></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="produto">
+                                        <a href="produto.html">
+                                            <figure class="foto"><img src="http://placehold.it/181x195/FFF" alt="Imagem" class="img-responsive"></figure>
+                                            <div class="info">
+                                                <p class="nome">Descrição do produto</p><a href="#" class="plus"><i class="fa fa-plus-circle"></i>VER MAIS</a></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="produto">
+                                        <a href="produto.html">
+                                            <figure class="foto"><img src="http://placehold.it/181x195/FFF" alt="Imagem" class="img-responsive"></figure>
+                                            <div class="info">
+                                                <p class="nome">Descrição do produto</p><a href="#" class="plus"><i class="fa fa-plus-circle"></i>VER MAIS</a></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="produto">
+                                        <a href="produto.html">
+                                            <figure class="foto"><img src="http://placehold.it/181x195/FFF" alt="Imagem" class="img-responsive"></figure>
+                                            <div class="info">
+                                                <p class="nome">Descrição do produto</p><a href="#" class="plus"><i class="fa fa-plus-circle"></i>VER MAIS</a></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="produto">
+                                        <a href="produto.html">
+                                            <figure class="foto"><img src="http://placehold.it/181x195/FFF" alt="Imagem" class="img-responsive"></figure>
+                                            <div class="info">
+                                                <p class="nome">Descrição do produto</p><a href="#" class="plus"><i class="fa fa-plus-circle"></i>VER MAIS</a></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="produto">
+                                        <a href="produto.html">
+                                            <figure class="foto"><img src="http://placehold.it/181x195/FFF" alt="Imagem" class="img-responsive"></figure>
+                                            <div class="info">
+                                                <p class="nome">Descrição do produto</p><a href="#" class="plus"><i class="fa fa-plus-circle"></i>VER MAIS</a></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="produto">
+                                        <a href="produto.html">
+                                            <figure class="foto"><img src="http://placehold.it/181x195/FFF" alt="Imagem" class="img-responsive"></figure>
+                                            <div class="info">
+                                                <p class="nome">Descrição do produto</p><a href="#" class="plus"><i class="fa fa-plus-circle"></i>VER MAIS</a></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="produto">
+                                        <a href="produto.html">
+                                            <figure class="foto"><img src="http://placehold.it/181x195/FFF" alt="Imagem" class="img-responsive"></figure>
+                                            <div class="info">
+                                                <p class="nome">Descrição do produto</p><a href="#" class="plus"><i class="fa fa-plus-circle"></i>VER MAIS</a></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="pager order-md-1"><a href="#" data-target="#carousel-similares" data-event="prev" class="pager-prev"><i class="icone pager-prev"></i></a></div>
+                            <div class="pager order-md-3"><a href="#" data-target="#carousel-similares" data-event="next" class="pager-next"><i class="icone pager-next"></i></a></div>
+                        </div>
+                        <!-- carousel-->
+                    </section>
+                </div>
+            </section>
+        </div>
+        <!-- /.wrapper-->
+        <footer class="rodape">
+            <section class="area-contato">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-7 area-newsletter">
+                            <h3>RECEBA NOSSO INFORMATIVO</h3>
+                            <p>Deixe seu nome e email no espaço a baixo e receba nossas novidades.</p>
+                            <form class="form-inline"><input type="text" name="nome" placeholder="Nome" class="form-control input-sm"><input type="email" name="email" placeholder="Email" class="form-control input-sm"><input type="submit" value="OK" class="btn btn-primary btn-sm"></form>
+                        </div>
+                        <div class="col-md-4 col-sm-5 col-contato">
+                            <h3><i class="icone telefone"></i> CONTATO</h3>
+                            <p>Matriz - Lumilux Suprimentos Industriais Ltda</p>
+                            <p>Rua das Canjeranas, 223 – Jabaquara</p>
+                            <p>São Paulo | SP - CEP 04349-020</p>
+                            <p>Fone: +55 11 33881800</p>
+                            <p><i class="icone email"></i> contato@lumilux.com.br</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="creditos">
+                <div class="container">
+                    <p>Lumilux © 2016 Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
+        <script src="js/starter.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <!--[if lt IE 10]>
+	<script>message_IE();</script>
+<![endif]-->
+    </body>
+
+</html>

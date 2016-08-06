@@ -30,6 +30,10 @@ i.icone {
 	&.email {@include make-icon(21px, 16px, -210px -41px);}
 
 	&.finalizar {@include make-icon(26px, 26px, -227px -144px);}
+
+	&.olho {@include make-icon(24px, 15px, -260px -21px);}
+	&.frete {@include make-icon(47px, 33px, -227px -170px);}
+	&.carrinho-lg {@include make-icon(46px, 38px, -279px -165px);}
 }
 li.active a i.icone,
 li:hover a i.icone {

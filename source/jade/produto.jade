@@ -1,0 +1,127 @@
+extend common/template.jade
+
+block title
+    title Produto
+
+block active
+    -var currentUrl = "prod"
+
+block conteudo
+    section.pagina-produto.internas
+        .container
+            .breadcrumb Você está em:
+                ul
+                    li: a(href="index.html") Página Inicial
+                    li: a(href="loja.html") Loja Virtual
+                    li: a(href="index.html") Iluminação
+                    li.active: a(href="index.html") Lâmpadas LED
+
+            .row
+                .col-md-5
+                    .foto-produto
+                        ul.miniaturas#miniaturas
+                            li: a(href="#",data-image="http://placehold.it/427x427",data-zoom-image="imagens/conteudo/lampadas.jpg")
+                                img(src="http://placehold.it/62x62")
+                            li: a(href="#",data-image="http://placehold.it/427x427/26FF5C",data-zoom-image="imagens/conteudo/lampadas.jpg")
+                                img(src="http://placehold.it/62x62/26FF5C")
+                            li: a(href="#",data-image="http://placehold.it/427x427/FF9326",data-zoom-image="imagens/conteudo/lampadas.jpg")
+                                img(src="http://placehold.it/62x62/FF9326")
+                            li: a(href="#",data-image="http://placehold.it/427x427/0080FF",data-zoom-image="imagens/conteudo/lampadas.jpg")
+                                img(src="http://placehold.it/62x62/0080FF")
+                        figure.grande
+                            img(src="http://placehold.it/427x427",data-zoom-image="imagens/conteudo/lampadas.jpg")#img-zoom.img-responsive
+                            figcaption
+                                i.icone.busca
+                                | PASSE O MOUSE PARA VER MAIS DETALHES
+                    // .foto-produto
+
+                .col-md-6.col-md-offset-1.info-produto
+                    header.page-header
+                        h1 NOME DO PRODUTO
+                        p Marca: Nome da marca
+                    // .page-header
+
+                    .area-preco
+                        span Por:
+                        strong
+                            small R$
+                            | 100
+                            small ,00
+
+                    ul.precos
+                        li R$ 00,00 à vista
+                        li 0x sem juros de R$ 00,00
+                        li 0x com juros de R$ 00,00
+
+                    a(href="#formas").ver-formas.scrollIntoView
+                        i.icone.olho
+                        | ver mais formas de pagamento
+
+                    .row
+                        .col-sm-6.area-quantidade.mgb-35
+                            label QUANTIDADE
+                            input(type="number",name="quantidade",value="1").form-control
+                        // .col-sm-6
+                        .col-sm-6.mgb-35.text-center
+                            a(href="carrinho.html").btn.btn-add-to-cart-lg
+                                i.icone.carrinho-lg
+                                span ADICIONAR AO CARRINHO
+                        // .col-sm-6
+                    // row
+
+                    div.area-frete
+                        .box
+                            i.icone.frete
+                            span calcule seu frete
+                        label CEP
+                        input(type="text",name="cep1",maxlength="5",data-jump="cep2",size="5").form-control#cep1
+                        label -
+                        input(type="text",name="cep2",maxlength="3",size="3").form-control#cep2
+
+                // coluna-principal
+            // .row
+
+            section.area-formas-pagamento#formas
+                header
+                    h3 FORMAS DE PAGAMENTO
+
+                table.table: tbody
+                    tr
+                        td Cartão Visa
+                        td à vista
+                        td R$ 00,00
+                        td Desconto de X%
+                    tr
+                        td Cartão Master Card
+                        td à vista
+                        td R$ 00,00
+                        td Desconto de X%
+                    tr
+                        td Cartão Diners
+                        td à vista
+                        td R$ 00,00
+                        td Desconto de X%
+
+            section.area-similares
+                header: h3 PRODUTOS SIMILARES
+
+                .carousel-h.similares-flex
+                    section#carousel-similares.owl-carousel.order-md-2(data-carousel="mult-items", data-md-qnt="6", data-sm-qnt="3", data-xs-qnt="1")
+                        -for(var i=0; i<14; i++)
+                            .item
+                                div.produto
+                                    a(href="produto.html")
+                                        figure.foto: img(src="http://placehold.it/181x195/FFF",alt="Imagem").img-responsive
+                                        .info
+                                            p.nome Descrição do produto
+                                            a(href="#").plus
+                                                i.fa.fa-plus-circle
+                                                | VER MAIS
+
+
+                    .pager.order-md-1
+                        a(href="#", class="pager-prev", data-target="#carousel-similares", data-event="prev"): i.icone.pager-prev
+                    .pager.order-md-3
+                        a(href="#", class="pager-next", data-target="#carousel-similares", data-event="next"): i.icone.pager-next
+                // carousel
+    //- .internas
